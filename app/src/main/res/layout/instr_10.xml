@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:layout_weight="10"
+    android:id="@+id/instr10">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        android:layout_weight="5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="#000000"
+            android:paddingRight="32dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:textSize="28sp"
+            android:text="Фотография ладони"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+android:paddingBottom="10dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="#000000"
+            android:paddingRight="32dp"
+            android:textSize="15sp"
+            android:text="1. Положите  на  ладонь  монету  1  рубль\n   2. Обоприте руку на твердую поверхность
+\n    3. Соблюдайте  параллельность дисплея и ладони\n    4. Сфотографируйте  ладонь  с расстояния\n25-30 см"/>
+
+
+        <ImageView
+            android:paddingTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="370dp"
+            android:layout_gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/palm"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="64dp" />
+</LinearLayout>

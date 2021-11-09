@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "566599257193",
+    "firebase_url": "https://k-arms.firebaseio.com",
+    "project_id": "k-arms",
+    "storage_bucket": "k-arms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566599257193:android:49ebd4220b9ee8140ca6f8",
+        "android_client_info": {
+          "package_name": "com.example.k_arms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566599257193-14lvs33v0a9677a05cs1ktl43vbj2p6u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.k_arms",
+            "certificate_hash": "73469139f3e04ef88a501662542164b25d9c616d"
+          }
+        },
+        {
+          "client_id": "566599257193-rlnp4208sg8iaek5lg00aq4d5f7qqfjr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1Zm4DCDUDjcLGWMNalcdDqxXcJ_xFt78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566599257193-rlnp4208sg8iaek5lg00aq4d5f7qqfjr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

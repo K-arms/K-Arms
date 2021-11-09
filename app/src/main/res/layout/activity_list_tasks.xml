@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fon3"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="97dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:ems="10"
+                    android:hint="Фамилия, инициалы"
+                    android:inputType="textPersonName"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/etContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:ems="10"
+                    android:hint="Телефон/Почта/Телеграм ссылка"
+                    android:inputType="textPersonName"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.7"
+                android:background="@drawable/et">
+
+                <TextView
+                    android:id="@+id/tModWeap"
+                    android:layout_width="156dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:text="Модель оружия" />
+
+                <Spinner
+                    android:id="@+id/sModWeap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.7"
+                android:background="@drawable/et">
+
+                <TextView
+
+                    android:id="@+id/tLogeType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:text="Тип приклада" />
+
+                <Spinner
+                    android:id="@+id/sLogeType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.7"
+                android:background="@drawable/et">
+
+                <TextView
+
+                    android:id="@+id/tLogeMod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Модель приклада" />
+
+                <Spinner
+                    android:id="@+id/sLogeMod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableTypeBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.7"
+                android:background="@drawable/et">
+
+                <TextView
+                    android:id="@+id/tTilType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Тип тыльной стороны ручки" />
+
+                <Spinner
+                    android:id="@+id/sTilType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/etOtvod1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:ems="10"
+
+                    android:hint="Отвод по гребню, мм "
+                    android:inputType="number"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableOtvodNosok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/etOtvod2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:ems="10"
+                    android:hint="Отвод по носку, мм"
+                    android:inputType="number"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableLenArm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/etLenArm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:height="100dp"
+                    android:alpha="0.70"
+                    android:background="@drawable/et"
+                    android:ems="10"
+                    android:hint="Длина руки L, мм"
+                    android:inputType="number"
+
+
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/etNizLad"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:ems="10"
+                    android:hint="Расстояние от колодки до края ладони, мм"
+                    android:inputType="number"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/etFinAngle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:ems="10"
+                    android:hint="Угол наклона линии положения пальцев"
+                    android:inputType="number"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/etPalmAngle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:ems="10"
+                    android:hint="Угол наклона положения ладони"
+                    android:inputType="number"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/etNeckLong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:ems="10"
+                    android:hint="Обхват шейки продольный"
+                    android:inputType="number"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/etNeckCross"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:ems="10"
+                    android:hint="Обхват шейки поперечный"
+                    android:inputType="number"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/etCommentListTasks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:ems="10"
+                    android:hint="Комментарий"
+                    android:inputType="textPersonName"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/table"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone" />
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btnCreatePhoto"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:background="@drawable/button1"
+                    android:text="Создать фото" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/Save"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:background="@drawable/button1"
+                    android:text="Сохранить" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

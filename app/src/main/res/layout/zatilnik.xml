@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Zatilnik">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fon"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.appcompat.widget.AppCompatImageView>
+
+
+    <ScrollView android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+
+        >
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+
+                    android:id="@+id/etNameZat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:ems="10"
+                    android:hint="Фамилия, инициалы"
+                    android:inputType="textPersonName"
+                    android:textSize="15dp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+
+                    android:id="@+id/etContactZat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:hint="Телефон/Почта/Телеграм ссылка"
+                    android:inputType="textPersonName"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:alpha="0.7"
+                android:background="@drawable/et"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tModZat"
+
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" Тип затыльника"
+
+                    android:textSize="15dp" />
+
+                <Spinner
+                    android:id="@+id/sModZat"
+
+                    android:alpha="0.5"
+                    android:popupBackground="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <ImageView
+                android:id="@+id/imageZat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="0dp" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/etA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:ems="10"
+                    android:hint="Размер А, мм"
+                    android:inputType="number"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:id="@+id/etB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Размер В, мм"
+                    android:inputType="number"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <EditText
+                    android:id="@+id/etC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:ems="10"
+                    android:hint="Размер С, мм"
+                    android:inputType="number"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:id="@+id/etD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Размер D, мм"
+                    android:inputType="number"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/tableE"
+                android:layout_width="match_parent"
+                android:layout_height="73dp">
+
+                <EditText
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:id="@+id/etE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Размер Е, мм"
+                    android:inputType="number"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/tableF"
+                android:layout_width="match_parent"
+                android:layout_height="73dp">
+
+                <EditText
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:id="@+id/etF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Размер F, мм"
+                    android:inputType="number"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                >
+
+                <EditText
+                    android:id="@+id/etWidthZat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:ems="10"
+                    android:hint="Толщина затыльника (стандартно 15 мм)"
+                    android:inputType="number"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                >
+
+                <EditText
+                    android:id="@+id/etNasechka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:ems="10"
+                    android:hint="Надпись (при необходимости)"
+                    android:inputType="textPersonName"
+                    android:textSize="15dp" />
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                >
+
+                <EditText
+                    android:id="@+id/etComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/et"
+                    android:ems="10"
+                    android:hint="Комментарий"
+                    android:inputType="textPersonName"
+                    android:textSize="15dp" />
+            </TableRow>
+
+
+
+            <ImageView
+                android:id="@+id/imgViewPhotoZat"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/table"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone" />
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btnCreatePhotoZat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+
+                    android:background="@drawable/button1"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:text="Создать фото профиля\nнеобходимого затыльника" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/SaveZat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button1"
+
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:text="Сохранить" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
